@@ -1,10 +1,4 @@
-# core requirements
-attrs==19.2.0
-vistautils==0.19.0
-immutablecollections==0.9.0
-
-
-# extras for development
+# dev requirements
 black==19.3b0
 pytest==5.2.0
 pytest-custom_exit_code
@@ -16,6 +10,3 @@ flake8==3.7.8
 mypy==0.701
 isort==4.3.21
 towncrier
-sphinx
-sphinx-autodoc-typehints
-sphinx_rtd_theme
