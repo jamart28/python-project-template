@@ -1,13 +1,13 @@
 language: python
 python:
-    - "3.6"
+    - "3.8"
 
 cache:
     pip: true
 
 install:
-    - pip install -r requirements.txt
-    - pip install codecov
+    - pip install poetry
+    - poetry shell & poetry install
 
 jobs:
     include:

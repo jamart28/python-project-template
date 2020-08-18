@@ -25,7 +25,7 @@ test:
 	python -m $(PYTEST) tests
 
 coverage:
-	python -m $(PYTEST) --cov={{cookiecutter.project_slug}} tests
+	python -m $(PYTEST) --cov=$(SOURCE_DIR_NAME) tests
 
 lint:
 	pylint $(SOURCE_DIR_NAME) tests benchmarks
@@ -43,10 +43,7 @@ black-fix:
 black-check:
 	black --check $(SOURCE_DIR_NAME) tests benchmarks
 
-doc-lint:
-	sphinx-build -nWT -b dummy docs docs/_build/html
-
-check: black-check doc-lint flake8 mypy lint
+check: black-check flake8 mypy lint
 
 precommit: black-fix check
 

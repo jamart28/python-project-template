@@ -16,6 +16,3 @@ flake8==3.7.8
 mypy==0.701
 isort==4.3.21
 towncrier
-sphinx
-sphinx-autodoc-typehints
-sphinx_rtd_theme
