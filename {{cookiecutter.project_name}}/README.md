@@ -6,8 +6,10 @@
 
 # Project Setup
 
-1. Create a Python 3.8 Poetry environment (or your favorite other means of creating a virtual environment): `poetry shell`.
-2. `poetry install` or if not using Poetry `pip install -r requirements.txt`
+Setup a python virtual environment and install all dependencies. The following instructions are for poetry (my preferred dependency and virtual environment manager)
+
+1. Create virtual environment and install all dependencies: `poetry install`
+2. Spawn a shell within your virtual environment: `poetry shell`
 
 # Contributing
 
